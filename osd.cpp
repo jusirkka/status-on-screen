@@ -9,7 +9,8 @@ OSD::OSD(const QPoint& pos, QWidget *parent)
 {
     setWindowFlags(Qt::WindowStaysOnTopHint |
                    Qt::X11BypassWindowManagerHint |
-                   Qt::FramelessWindowHint
+                   Qt::FramelessWindowHint |
+                   Qt::WindowTransparentForInput
                    );
     setText("Capslock");
     setAutoFillBackground(false);
