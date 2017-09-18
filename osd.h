@@ -2,6 +2,7 @@
 #define OSD_H
 
 #include <QLabel>
+#include <QPoint>
 
 class KModifierKeyInfo;
 
@@ -11,7 +12,7 @@ class OSD : public QLabel
 
 public:
 
-    OSD(QWidget* parent = 0);
+    OSD(const QPoint& pos, QWidget* parent = 0);
     ~OSD();
 
 private Q_SLOTS:
